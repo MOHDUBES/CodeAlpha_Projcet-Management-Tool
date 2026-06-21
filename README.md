@@ -1,5 +1,7 @@
 # CodeAlpha_Projcet-Management-Tool
 
+**🟢 Live Demo:** [https://code-alpha-projcet-management-tool-eight.vercel.app](https://code-alpha-projcet-management-tool-eight.vercel.app)
+
 A full-stack, highly interactive Project Management Tool designed for modern teams. Built with a focus on speed, aesthetics, and real-time collaboration. The architecture is split into a **Next.js Frontend (Client)** and an **Express Backend (Server)**, providing a seamless, desktop-like experience on the web.
 
 ---
