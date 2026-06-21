@@ -14,7 +14,7 @@ import toast from 'react-hot-toast';
 
 export default function SettingsPage() {
   const queryClient = useQueryClient();
-  const { user: authUser, setUser } = useAuthStore();
+  const { user: authUser, updateUser } = useAuthStore();
   const { theme, setTheme } = useTheme();
 
   const [activeTab, setActiveTab] = useState<'profile' | 'security' | 'preferences'>('profile');
@@ -50,7 +50,7 @@ export default function SettingsPage() {
     },
     onSuccess: (updatedUser) => {
       queryClient.invalidateQueries({ queryKey: ['profile'] });
-      setUser(updatedUser);
+      updateUser(updatedUser);
       toast.success('Profile updated successfully');
     },
     onError: (err: any) => toast.error(err.response?.data?.message || 'Failed to update profile'),
