@@ -36,11 +36,7 @@ export default function LandingPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[120px] opacity-50 pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <div>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
@@ -48,48 +44,28 @@ export default function LandingPage() {
               </span>
               v2.0 is now live
             </span>
-          </motion.div>
+          </div>
           
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold tracking-tight text-balance mx-auto leading-tight"
-          >
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance mx-auto leading-tight">
             Project Management <br />
             <span className="gradient-text">Reimagined for Speed</span>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto text-balance"
-          >
+          <p className="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
             The all-in-one platform for modern teams to plan, track, and collaborate on projects with unprecedented speed and clarity.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href={ROUTES.SIGNUP}>
               <Button size="xl" variant="glow" rightIcon={<ArrowRight className="h-5 w-5" />}>
                 Start building for free
               </Button>
             </Link>
             <p className="text-sm text-muted-foreground sm:hidden">No credit card required</p>
-          </motion.div>
+          </div>
 
           {/* Abstract App Preview */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-20 relative mx-auto max-w-5xl"
-          >
+          <div className="mt-20 relative mx-auto max-w-5xl">
             <div className="rounded-2xl border border-border/50 bg-card/50 backdrop-blur-xl p-2 shadow-2xl">
               <div className="rounded-xl border border-border/50 bg-background overflow-hidden flex h-[400px] md:h-[600px] relative">
                 {/* Fake Sidebar */}
@@ -127,7 +103,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
