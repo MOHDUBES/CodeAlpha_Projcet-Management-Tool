@@ -21,9 +21,7 @@ export const metadata: Metadata = {
     description: 'The all-in-one project management platform for modern teams.',
     siteName: 'PM SaaS',
   },
-  icons: {
-    icon: '/logo.png?v=2',
-  },
+
   twitter: {
     card: 'summary_large_image',
     title: 'PM SaaS — Enterprise Project Management',
@@ -35,8 +33,8 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/logo.png?v=2',
+    apple: '/logo.png',
   },
 };
 
